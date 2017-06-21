@@ -7,7 +7,7 @@ body, html {
 	position: fixed;
 	height: 768px;
 	left: 0px;
-	width: 375px;
+	width: 344px;
 	background-color: rgb(7,33,60);
 	background-image: url("assets/sidebarbg.png");
 	background-position: top right;
@@ -15,15 +15,16 @@ body, html {
 
 .eadslogo {
 	position: fixed;
-	left: 44.625px;
+	left: 60px;
 	top: 14px;
 }
 
 .title {
 	font-family: 'Quicksand', sans-serif;
+	font-size: 27px;
+	text-align: center;
 	color: rgb(209,209,209);
-	margin-top: 90px;
-	margin-left: 12px;
+	margin-top: 75px;
 }
 
 .mainbuttons {
@@ -31,37 +32,139 @@ body, html {
 }
 
 .oddbutton {
-	margin-left: 55px;
+	margin-left: 60px;
 	display: block;
-	padding-bottom: 52px;
+	margin-bottom: -25px;
 }
 
 .evenbutton {
-
+	margin-left: 176px;
+	display: block;
+	margin-bottom: -25px;
 }
 
 .button1 {
 	border-radius: 50%;
 	height: 100px;
 	width: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button1.png");
 }
 
 .button2 {
-
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button2.png");
 }
 
 .button3 {
 	border-radius: 50%;
 	height: 100px;
 	width: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button3.png");
 }
 
 .button4 {
-
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button4.png");
 }
 
 .button5 {
 	border-radius: 50%;
 	height: 100px;
 	width: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button5.png");
+}
+
+.button6 {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button6.png");
+}
+
+.label1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -74px;
+	margin-left: -185px;
+}
+
+.label2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -65px;
+	margin-left: -70px;
+}
+
+.label3 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -65px;
+	margin-left: -185px;
+}
+
+.label4 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -75px;
+	margin-left: -70px;
+}
+
+.label5 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -65px;
+	margin-left: -185px;
+}
+
+.label6 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -75px;
+	margin-left: -70px;
 }
