@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.button1').fadeTo(500,0.5);
+	/*$('.button1').fadeIn(500);
 	$('.button2').fadeTo(500,0.5);
 	$('.button3').fadeTo(500,0.5);
 	$('.button4').fadeTo(500,0.5);
@@ -23,5 +23,5 @@ $(document).ready(function () {
 	});
 	$('.button6').click(function () {
 		$(this).fadeTo(500,1);
-	});
+	});*/
 });

@@ -29,7 +29,7 @@ body, html {
 }
 
 .mainbuttons {
-
+	display: hidden;
 }
 
 .oddbutton {
@@ -50,12 +50,19 @@ body, html {
 	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
-	color: rgb(1,145,171);
+	color: rgb(255,255,255);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-image: url("assets/button1icon.png");
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+}
+
+.button1:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
 }
 
 .button2 {
@@ -64,13 +71,20 @@ body, html {
 	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
-	color: rgb(1,145,171);
+	color: rgb(255,255,255);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-image: url("assets/button2icon.png");
 	background-position: center;
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+}
+
+.button2:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
 }
 
 .button3 {
@@ -79,13 +93,20 @@ body, html {
 	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
-	color: rgb(1,145,171);
+	color: rgb(255,255,255);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-image: url("assets/button3icon.png");
 	background-position: center;
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+}
+
+.button3:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
 }
 
 .button4 {
@@ -94,12 +115,19 @@ body, html {
 	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
-	color: rgb(1,145,171);
+	color: rgb(255,255,255);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-image: url("assets/button4icon.png");
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+}
+
+.button4:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
 }
 
 .button5 {
@@ -108,13 +136,20 @@ body, html {
 	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
-	color: rgb(1,145,171);
+	color: rgb(255,255,255);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-image: url("assets/button5icon.png");
 	background-position: center;
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+}
+
+.button5:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
 }
 
 .button6 {
@@ -123,13 +158,20 @@ body, html {
 	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
-	color: rgb(1,145,171);
+	color: rgb(255,255,255);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-image: url("assets/button6icon.png");
 	background-position: center;
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+}
+
+.button6:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
 }
 
 /*.label1 {
