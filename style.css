@@ -5,6 +5,7 @@ body, html {
 
 .sidebar {
 	position: fixed;
+	float: left;
 	height: 768px;
 	left: 0px;
 	width: 344px;
@@ -34,94 +35,104 @@ body, html {
 .oddbutton {
 	margin-left: 60px;
 	display: block;
-	margin-bottom: -25px;
+	margin-bottom: -40px;
 }
 
 .evenbutton {
 	margin-left: 176px;
 	display: block;
-	margin-bottom: -25px;
+	margin-bottom: -40px;
 }
 
 .button1 {
 	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 102px;
+	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
+	color: rgb(1,145,171);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("assets/button1.png");
+	background-image: url("assets/button1icon.png");
 }
 
 .button2 {
 	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 102px;
+	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
+	color: rgb(1,145,171);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("assets/button2.png");
+	background-image: url("assets/button2icon.png");
+	background-position: center;
 }
 
 .button3 {
 	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 102px;
+	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
+	color: rgb(1,145,171);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("assets/button3.png");
+	background-image: url("assets/button3icon.png");
+	background-position: center;
 }
 
 .button4 {
 	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 102px;
+	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
+	color: rgb(1,145,171);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("assets/button4.png");
+	background-image: url("assets/button4icon.png");
 }
 
 .button5 {
 	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 102px;
+	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
+	color: rgb(1,145,171);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("assets/button5.png");
+	background-image: url("assets/button5icon.png");
+	background-position: center;
 }
 
 .button6 {
 	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 102px;
+	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
+	color: rgb(1,145,171);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("assets/button6.png");
+	background-image: url("assets/button6icon.png");
+	background-position: center;
 }
 
-.label1 {
+/*.label1 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
 	text-align: center;
@@ -167,4 +178,9 @@ body, html {
 	text-align: center;
 	margin-top: -75px;
 	margin-left: -70px;
+}*/
+
+.itlogo {
+	float: right;
+	margin-top: 582px;
 }
