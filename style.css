@@ -50,20 +50,24 @@ body, html {
 	width: 102px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
-	color: rgb(255,255,255);
+	color: rgb(0,0,0);
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-image: url("assets/button1icon.png");
-	opacity: 0.5;
-	transition: all 0.4s ease 0s;
+	/*opacity: 0.5;
+	transition: all 0.4s ease 0s;*/
 }
 
-.button1:hover {
-	opacity: 1;
+.button1hover {
 	color: rgb(1,145,171);
 }
+
+/*.button1:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+}*/
 
 .button2 {
 	border-radius: 50%;
@@ -82,12 +86,7 @@ body, html {
 	transition: all 0.4s ease 0s;
 }
 
-.button2:hover {
-	opacity: 1;
-	color: rgb(1,145,171);
-}
-
-.button3 {
+.button2text {
 	border-radius: 50%;
 	height: 102px;
 	width: 102px;
@@ -98,15 +97,53 @@ body, html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
+	top: 189px;
+	transition: all 0.4s ease 0s;
+	background-color: transparent;
+}
+
+.button2:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+}
+
+.button2text:hover {
+	color: rgb(1,145,171);
+}
+
+.button3 {
+	border-radius: 50%;
+	height: 102px;
+	width: 102px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	color: rgb(0,0,0);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-image: url("assets/button3icon.png");
 	background-position: center;
 	opacity: 0.5;
 	transition: all 0.4s ease 0s;
 }
 
+.button3hover {
+	color: rgb(1,145,171);
+	opacity: 1;
+}
+
 .button3:hover {
 	opacity: 1;
 	color: rgb(1,145,171);
+}
+
+.highlighted {
+    -webkit-box-shadow: 0 0 10px #BEFFBB;
+    -moz-box-shadow: 0 0 10px #BEFFBB;
+    box-shadow: 0 0 10px #BEFFBB;
+    cursor: pointer;
 }
 
 .button4 {
