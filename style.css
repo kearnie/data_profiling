@@ -6,7 +6,7 @@ body, html {
 .sidebar {
 	position: fixed;
 	float: left;
-	height: 768px;
+	height: 100%; /*768px;*/
 	left: 0px;
 	width: 344px;
 	background-color: rgb(7,33,60);
@@ -23,15 +23,16 @@ body, html {
 
 .title {
 	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
 	font-size: 27px;
 	text-align: center;
 	color: rgb(209,209,209);
 	margin-top: 75px;
 }
 
-.mainbuttons {
-	display: hidden;
-}
+/*.mainbuttons {
+	top: 50%;
+} */
 
 .oddbutton {
 	margin-left: 60px;
@@ -296,11 +297,13 @@ body, html {
 }
 
 .description {
-	position: absolute;
-	line-height: 0px;
-	left: 10px;
-	/*right: 10px;*/
-	font-family: 'Quicksand', sans-serif;
+	/*position: absolute; */
+	line-height: 7px; 
+	padding-left: 10px;
+	/*right: 10px; */
+	font-family: 'Quicksand', sans-serif; 
+	/* font-family: 'Maven Pro', sans-serif;*/
+	font-weight: 400;
 	font-size: 36px;
 	color: rgb(57,98,143);
 }
@@ -310,6 +313,47 @@ body, html {
 	top: 2px;
 	right: 35px;
 	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
 	font-size: 20px;
-	color: rgb(130,130,130);
+	color: rgb(150,150,150);
+}
+
+/* EXPLORE TABLES TAB */
+.nodewindow1 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	width: 65%;
+	display: inline-block;
+	height: 80%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+}
+
+.selectedregions1 {
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	height: 60%;
+	width: 32%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+}
+
+.leftwintitle {
+	line-height: 0;
+	padding-left: 5px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 15px;
+	color: rgb(80,161,191);
+}
+
+.rightwintitle {
+	line-height: 0;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 15px;
+	padding-left: 5px;
+	color: rgb(105,148,173);
 }

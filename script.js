@@ -9,6 +9,8 @@ function resetbutton(unclickedbutton) {
 $(document).ready(function () {
 	$('.description').hide();
 	$('.stepcount').hide();
+	$('.nodewindow1').hide();
+	$('.selectedregions1').hide();
 	$('.button1').click(function () {
 		/*$('.description').fadeIn(400);
 		$('.stepcount').fadeIn(400);*/
@@ -16,6 +18,8 @@ $(document).ready(function () {
 			$('.description').fadeOut(function () {
 				$(this).text("Select tables to analyze").fadeIn(300);
 			});
+			$('.nodewindow1').fadeIn(500);
+			$('.selectedregions1').fadeIn(500);
 		};
 		if ($('.stepcount').text() != "step 1/6") {
 			$('.stepcount').fadeOut(function () {
