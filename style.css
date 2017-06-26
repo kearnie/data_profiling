@@ -295,6 +295,7 @@ body, html {
 	left: 345px;
 	right: 0px;
 	bottom: 0px;
+	background-image: url("assets/windowbg.png");
 }
 
 .description {
@@ -317,6 +318,30 @@ body, html {
 	font-weight: 400;
 	font-size: 20px;
 	color: rgb(150,150,150);
+}
+
+.welcomemsg {
+	/*position: absolute;*/
+	margin-top: 200px;
+	margin-right: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 55px;
+	/*color: rgb(57,98,143);*/
+	color: rgb(64,106,183);
+	text-align: right;
+}
+
+.instructions {
+	/*position: absolute;
+	top: 50%;
+	left: 20%;*/
+	margin-right: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 35px;
+	text-align: right;
+	color: rgb(109,111,114);
 }
 
 /* EXPLORE TABLES TAB */

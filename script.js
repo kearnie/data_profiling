@@ -32,7 +32,7 @@ function resetOneWindow(clickedbutton) {
 	//$('.nodewindow1').fadeIn(500);
 	$('.selectedregions1').fadeOut(function () {
 		$('.selectedregions1').css('display','none');
-	})
+	});
 
 	$('.nodewindow1').fadeOut(function () {
 		$('.nodewindow1').css('width',win1w);
@@ -84,11 +84,12 @@ function resetWindows(clickedbutton) {
 	//$('.selectedregions1').fadeIn(600);
 	//$('.nodewindow1').fadeIn(500);
 	//$('nodewindow1').css('display','none');
+
 	$('.nodewindow1').fadeOut(function () {
 		$(this).css('display','none');
 		$(this).css({'display':'inline-block','width':win1w,
-			'height':win1h}).fadeIn(600);
-	});
+			'height':win1h}).fadeIn(500);
+	}); 
 
 	//$('.selectedregions1').css('display','none');
 	$('.selectedregions1').fadeOut(function () {
@@ -110,6 +111,10 @@ $(document).ready(function () {
 	$('.stepcount').hide();
 	$('.nodewindow1').hide();
 	$('.selectedregions1').hide();
+	$('.welcomemsg').hide();
+	$('.instructions').hide();
+	$('.welcomemsg').fadeIn(1700);
+	$('.instructions').fadeIn(2100);
 	$('.button1').click(function () {
 		/*$('.description').fadeIn(400);
 		$('.stepcount').fadeIn(400);*/
