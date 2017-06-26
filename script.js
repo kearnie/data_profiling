@@ -44,6 +44,8 @@ function resetOneWindow(clickedbutton) {
 	});
 }
 
+
+
 // reset two window dimensions for Explore Tables, Classify, Rule Author step
 function resetWindows(clickedbutton) {
 	//$('.nodewindow1').fadeOut();
@@ -106,6 +108,176 @@ function resetWindows(clickedbutton) {
 	});
 } 
 
+function resetWindow1 () {
+	/*if ($('.nodewindow1').is(":hidden")) {
+		$('.nodewindow1').fadeIn(1600);
+		$('.selectedregions1').fadeIn(1600);
+		$('.leftwintitle').fadeOut(function () {
+			$(this).text('demo Page 1 of 1').fadeIn(1500);
+		});
+		$('.rightwintitle').fadeOut(function () {
+			$(this).text('Selected Regions').fadeIn(1500);
+		});
+	}*/
+	if ($('.stepcount').text() == "step 2/6") {
+		$('.graph2').fadeOut(function () {
+			$('.nodewindow1').fadeIn(1600);
+			$('.selectedregions1').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('demo Page 1 of 1').fadeIn(1500);
+			});
+			$('.rightwintitle').fadeOut(function () {
+				$(this).text('Selected Regions').fadeIn(1500);
+			});
+		});
+	}
+	else if ($('.stepcount').text() == "step 3/6") {
+		$('.virtualobjectlist3').fadeOut();
+		$('.table3').fadeOut(function () {
+			$('.nodewindow1').fadeIn(1600);
+			$('.selectedregions1').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('demo Page 1 of 1').fadeIn(1500);
+			});
+			$('.rightwintitle').fadeOut(function () {
+				$(this).text('Selected Regions').fadeIn(1500);
+			});
+		});
+	}
+}
+
+function resetWindow2 () {
+	if ($('.stepcount').text() == "step 1/6") {
+		$('.selectedregions1').fadeOut();
+		$('.nodewindow1').fadeOut(function () {
+			$('.graph2').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Graph').fadeIn(1500);
+			});
+		});
+	}
+	else if ($('.stepcount').text() == "step 3/6") {
+		$('.virtualobjectlist3').fadeOut();
+		$('.table3').fadeOut(function () {
+			$('.graph2').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Graph').fadeIn(1500);
+			});
+		});
+	}
+}
+
+function resetWindow3 () {
+	if ($('.stepcount').text() == "step 1/6") {
+		$('.selectedregions1').fadeOut();
+		$('.nodewindow1').fadeOut(function () {
+			$('.table3').fadeIn(1600);
+			$('.virtualobjectlist3').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Table').fadeIn(1500);
+			});
+			$('.rightwintitle').fadeOut(function () {
+				$(this).text('Virtual Object List').fadeIn(1500);
+			});
+		});
+	}
+	else if ($('.stepcount').text() == "step 2/6") {
+		$('.graph2').fadeOut(function () {
+			$('.table3').fadeIn(1600);
+			$('.virtualobjectlist3').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Table').fadeIn(1500);
+			});
+			$('.rightwintitle').fadeOut(function () {
+				$(this).text('Virtual Object List').fadeIn(1500);
+			});
+		});
+	}
+}
+
+function resetWindow4 () {
+	if ($('.stepcount').text() == "step 1/6") {
+		$('.selectedregions1').fadeOut();
+		$('.nodewindow1').fadeOut(function () {
+			$('.scopemodel4').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Scope Model').fadeIn(1500);
+			});
+		});
+	}
+	else if ($('.stepcount').text() == "step 2/6") {
+		$('.graph2').fadeOut();
+		$('.table3').fadeOut(function () {
+			$('.scopemodel4').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Scope Model').fadeIn(1500);
+			});
+		});
+	}
+	else if ($('.stepcount').text() == "step 3/6") {
+		$('.virtualobjectlist3').fadeOut();
+		$('.table3').fadeOut(function () {
+			$('.scopemodel4').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Scope Model').fadeIn(1500);
+			});
+		});
+	}
+}
+
+function resetWindow5 () {
+	if ($('.stepcount').text() == "step 1/6") {
+		$('.selectedregions1').fadeOut();
+		$('.nodewindow1').fadeOut(function () {
+			$('.queryreport5').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Query Report').fadeIn(1500);
+			});
+		});
+	}
+	else if ($('.stepcount').text() == "step 2/6") {
+		$('.graph2').fadeOut(function () {
+			$('.queryreport5').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Query Report').fadeIn(1500);
+			});
+		});
+	}
+	else if ($('.stepcount').text() == "step 3/6") {
+		$('.virtualobjectlist3').fadeOut();
+		$('.table3').fadeOut(function () {
+			$('.queryreport5').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Query Report').fadeIn(1500);
+			});
+		});
+	}
+	else if ($('.stepcount').text() == "step 4/6") {
+		$('.scopemodel4').fadeOut(function () {
+			$('.queryreport5').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Query Report').fadeIn(1500);
+			});
+		});
+	}
+}
+
+function resetWindow6 () {
+	if ($('.stepcount').text() == "step 1/6") {
+		$('.selectedregions1').fadeOut();
+		$('.nodewindow1').fadeOut(function () {
+			$('.selectedrule6').fadeIn(1600);
+			$('.rulelist6').fadeIn(1600);
+			$('.leftwintitle').fadeOut(function () {
+				$(this).text('Selected Rule').fadeIn(1500);
+			});
+			$('.rightwintitle').fadeOut(function () {
+				$(this).text('Rule List').fadeIn(1500);
+			});
+		});
+	}
+}
+
 $(document).ready(function () {
 	$('.description').hide();
 	$('.stepcount').hide();
@@ -113,8 +285,17 @@ $(document).ready(function () {
 	$('.selectedregions1').hide();
 	$('.welcomemsg').hide();
 	$('.instructions').hide();
-	$('.welcomemsg').fadeIn(1700);
-	$('.instructions').fadeIn(2100);
+	$('.welcomemsg').fadeIn(1900);
+	$('.instructions').fadeIn(2400);
+	$('.nodewindow1').hide();
+	$('.selectedregions1').hide();
+	$('.graph2').hide();
+	$('.table3').hide();
+	$('.virtualobjectlist3').hide();
+	$('.scopemodel4').hide();
+	$('.queryreport5').hide();
+	$('.selectedrule6').hide();
+	$('.rulelist6').hide();
 	$('.button1').click(function () {
 		/*$('.description').fadeIn(400);
 		$('.stepcount').fadeIn(400);*/
@@ -131,7 +312,10 @@ $(document).ready(function () {
 			$('.selectedregions1').css('height','60%');
 			$('.nodewindow1').fadeIn(500);
 			$('.selectedregions1').fadeIn(500); */
-			resetWindows('.button1');
+			$('.welcomemsg').hide();
+			$('.instructions').hide();
+			//resetWindows('.button1');
+			resetWindow1();
 		};
 		if ($('.stepcount').text() != "step 1/6") {
 			$('.stepcount').fadeOut(function () {
@@ -153,7 +337,8 @@ $(document).ready(function () {
 			$('.description').fadeOut(function () {
 				$(this).text("Perform baseline analysis").fadeIn(300);
 			});
-			resetOneWindow('.button2');
+			//resetOneWindow('.button2');
+			resetWindow2();
 		};
 		if ($('.stepcount').text() != "step 2/6") {
 			$('.stepcount').fadeOut(function () {
@@ -173,7 +358,8 @@ $(document).ready(function () {
 			$('.description').fadeOut(function () {
 				$(this).text("Classify table columns").fadeIn(300);
 			});
-			resetWindows('.button3');
+			//resetWindows('.button3');
+			resetWindow3();
 		};
 		if ($('.stepcount').text() != "step 3/6") {
 			$('.stepcount').fadeOut(function () {
@@ -193,7 +379,8 @@ $(document).ready(function () {
 			$('.description').fadeOut(function () {
 				$(this).text("Attach default generic rules").fadeIn(300);
 			});
-			resetOneWindow('.button4');
+			//resetOneWindow('.button4');
+			resetWindow4();
 		};
 		if ($('.stepcount').text() != "step 4/6") {
 			$('.stepcount').fadeOut(function () {
@@ -213,7 +400,8 @@ $(document).ready(function () {
 			$('.description').fadeOut(function () {
 				$(this).text("Execute reporting query").fadeIn(300);
 			});
-			resetOneWindow('.button5');
+			//resetOneWindow('.button5');
+			resetWindow5();
 		};
 		if ($('.stepcount').text() != "step 5/6") {
 			$('.stepcount').fadeOut(function () {
