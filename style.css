@@ -282,9 +282,9 @@ body, html {
 .itlogo {
 	/*margin-top: 582px;*/
 	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	width: 25%;
+	right: 3px;
+	bottom: 3px;
+	width: 20%;
 }
 
 .window {
