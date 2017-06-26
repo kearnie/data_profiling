@@ -392,6 +392,7 @@ body, html {
 
 /* BASELINE TAB */
 .graph2 {
+	margin-top: 10px;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
@@ -405,17 +406,19 @@ body, html {
 
 /* CLASSIFY TAB */
 .table3 {
+	margin-top: 10px;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
-	height: 79%;
-	width: 60%;
+	height: 80%;
+	width: 66%;
 	border-width: 2px;
 	border-color: rgb(150,150,150);
 	border-radius: 5px;
 	background-color: rgba(255,255,255,.5);
 }
 .virtualobjectlist3 {
+	margin-top: 10px;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
@@ -429,6 +432,7 @@ body, html {
 
 /* BIND RULES TAB */
 .scopemodel4 {
+	margin-top: 10px;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
@@ -442,6 +446,7 @@ body, html {
 
 /* REPORTING TAB */
 .queryreport5 {
+	margin-top: 10px;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
@@ -458,7 +463,7 @@ body, html {
 	margin-top: 10px;
 	border-style: solid;
 	border-width: 1px;
-	width: 65%;
+	width: 66%;
 	display: inline-block;
 	height: 80%;
 	border-width: 2px;
@@ -468,6 +473,7 @@ body, html {
 }
 
 .rulelist6 {
+	margin-top: 10px;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;

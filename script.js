@@ -108,17 +108,9 @@ function resetWindows(clickedbutton) {
 	});
 } 
 
+// OFFICIAL BUTTON STEP WINDOW FADING IN LOADS START HERE 
+
 function resetWindow1 () {
-	/*if ($('.nodewindow1').is(":hidden")) {
-		$('.nodewindow1').fadeIn(1600);
-		$('.selectedregions1').fadeIn(1600);
-		$('.leftwintitle').fadeOut(function () {
-			$(this).text('demo Page 1 of 1').fadeIn(1500);
-		});
-		$('.rightwintitle').fadeOut(function () {
-			$(this).text('Selected Regions').fadeIn(1500);
-		});
-	}*/
 	if ($('.stepcount').text() == "step 2/6") {
 		$('.graph2').fadeOut(function () {
 			$('.nodewindow1').fadeIn(1600);
@@ -181,6 +173,18 @@ function resetWindow1 () {
 			});
 		});
 	}
+	else if ($('.welcomemsg').is(":visible")) {
+		$('.welcomemsg').hide();
+		$('.instructions').hide();
+		$('.nodewindow1').fadeIn(1600);
+		$('.selectedregions1').fadeIn(1600);
+		$('.leftwintitle').fadeOut(function () {
+			$(this).text('demo Page 1 of 1').fadeIn(1500);
+		});
+		$('.rightwintitle').fadeOut(function () {
+			$(this).text('Selected Regions').fadeIn(1500);
+		});
+	}
 }
 
 function resetWindow2 () {
@@ -225,6 +229,14 @@ function resetWindow2 () {
 			$('.leftwintitle').fadeOut(function () {
 				$(this).text('Graph').fadeIn(1500);
 			});
+		});
+	}
+	else if ($('.welcomemsg').is(":visible")) {
+		$('.welcomemsg').hide();
+		$('.instructions').hide();
+		$('.graph2').fadeIn(1600);
+		$('.leftwintitle').fadeOut(function () {
+			$(this).text('Graph').fadeIn(1500);
 		});
 	}
 }
@@ -292,6 +304,18 @@ function resetWindow3 () {
 			});
 		});
 	}
+	else if ($('.welcomemsg').is(":visible")) {
+		$('.welcomemsg').hide();
+		$('.instructions').hide();
+		$('.table3').fadeIn(1600);
+		$('.virtualobjectlist3').fadeIn(1600);
+		$('.leftwintitle').fadeOut(function () {
+			$(this).text('Table').fadeIn(1500);
+		});
+		$('.rightwintitle').fadeOut(function () {
+			$(this).text('Virtual Object List').fadeIn(1500);
+		});
+	}
 }
 
 function resetWindow4 () {
@@ -338,6 +362,14 @@ function resetWindow4 () {
 			});
 		});
 	}
+	else if ($('.welcomemsg').is(":visible")) {
+		$('.welcomemsg').hide();
+		$('.instructions').hide();
+		$('.scopemodel4').fadeIn(1600);
+		$('.leftwintitle').fadeOut(function () {
+			$(this).text('Scope Model').fadeIn(1500);
+		});
+	}
 }
 
 function resetWindow5 () {
@@ -382,6 +414,14 @@ function resetWindow5 () {
 			$('.leftwintitle').fadeOut(function () {
 				$(this).text('Query Report').fadeIn(1500);
 			});
+		});
+	}
+	else if ($('.welcomemsg').is(":visible")) {
+		$('.welcomemsg').hide();
+		$('.instructions').hide();
+		$('.queryreport5').fadeIn(1600);
+		$('.leftwintitle').fadeOut(function () {
+			$(this).text('Query Report').fadeIn(1500);
 		});
 	}
 }
@@ -449,6 +489,18 @@ function resetWindow6 () {
 			});
 		});
 	}
+	else if ($('.welcomemsg').is(":visible")) {
+		$('.welcomemsg').hide();
+		$('.instructions').hide();
+		$('.selectedrule6').fadeIn(1600);
+		$('.rulelist6').fadeIn(1600);
+		$('.leftwintitle').fadeOut(function () {
+			$(this).text('Selected Rule').fadeIn(1500);
+		});
+		$('.rightwintitle').fadeOut(function () {
+			$(this).text('Rule List').fadeIn(1500);
+		});
+	}
 }
 
 $(document).ready(function () {
@@ -475,7 +527,7 @@ $(document).ready(function () {
 		$('.stepcount').fadeIn(400);*/
 		if ($('.description').text() != "Select tables to analyze") {
 			$('.description').fadeOut(function () {
-				$(this).text("Select tables to analyze").fadeIn(300);
+				$(this).text("Select tables to analyze").fadeIn(700);
 			});
 			//$('.nodewindow1').fadeIn(500);
 			//$('.selectedregions1').fadeIn(500);
@@ -486,14 +538,16 @@ $(document).ready(function () {
 			$('.selectedregions1').css('height','60%');
 			$('.nodewindow1').fadeIn(500);
 			$('.selectedregions1').fadeIn(500); */
-			$('.welcomemsg').hide();
-			$('.instructions').hide();
+			//$('.welcomemsg').hide();
+			//$('.instructions').hide();
 			//resetWindows('.button1');
 			resetWindow1();
+			//$('.welcomemsg').hide();
+			//$('.instructions').hide();
 		};
 		if ($('.stepcount').text() != "step 1/6") {
 			$('.stepcount').fadeOut(function () {
-				$(this).text("step 1/6").fadeIn(300);
+				$(this).text("step 1/6").fadeIn(700);
 			});
 		};
 		$(this).addClass('highlighted');
@@ -509,14 +563,14 @@ $(document).ready(function () {
 	$('.button2').click(function () {
 		if ($('.description').text() != "Perform baseline analysis") {
 			$('.description').fadeOut(function () {
-				$(this).text("Perform baseline analysis").fadeIn(300);
+				$(this).text("Perform baseline analysis").fadeIn(700);
 			});
 			//resetOneWindow('.button2');
 			resetWindow2();
 		};
 		if ($('.stepcount').text() != "step 2/6") {
 			$('.stepcount').fadeOut(function () {
-				$(this).text("step 2/6").fadeIn(300);
+				$(this).text("step 2/6").fadeIn(700);
 			});
 		};
 		$(this).addClass('highlighted');
@@ -530,14 +584,14 @@ $(document).ready(function () {
 	$('.button3').click(function () {
 		if ($('.description').text() != "Classify table columns") {
 			$('.description').fadeOut(function () {
-				$(this).text("Classify table columns").fadeIn(300);
+				$(this).text("Classify table columns").fadeIn(700);
 			});
 			//resetWindows('.button3');
 			resetWindow3();
 		};
 		if ($('.stepcount').text() != "step 3/6") {
 			$('.stepcount').fadeOut(function () {
-				$(this).text("step 3/6").fadeIn(300);
+				$(this).text("step 3/6").fadeIn(700);
 			});
 		};
 		$(this).addClass('highlighted');
@@ -551,14 +605,14 @@ $(document).ready(function () {
 	$('.button4').click(function () {
 		if ($('.description').text() != "Attach default generic rules") {
 			$('.description').fadeOut(function () {
-				$(this).text("Attach default generic rules").fadeIn(300);
+				$(this).text("Attach default generic rules").fadeIn(700);
 			});
 			//resetOneWindow('.button4');
 			resetWindow4();
 		};
 		if ($('.stepcount').text() != "step 4/6") {
 			$('.stepcount').fadeOut(function () {
-				$(this).text("step 4/6").fadeIn(300);
+				$(this).text("step 4/6").fadeIn(700);
 			});
 		};
 		$(this).addClass('highlighted');
@@ -572,14 +626,14 @@ $(document).ready(function () {
 	$('.button5').click(function () {
 		if ($('.description').text() != "Execute reporting query") {
 			$('.description').fadeOut(function () {
-				$(this).text("Execute reporting query").fadeIn(300);
+				$(this).text("Execute reporting query").fadeIn(700);
 			});
 			//resetOneWindow('.button5');
 			resetWindow5();
 		};
 		if ($('.stepcount').text() != "step 5/6") {
 			$('.stepcount').fadeOut(function () {
-				$(this).text("step 5/6").fadeIn(300);
+				$(this).text("step 5/6").fadeIn(700);
 			});
 		};
 		$(this).addClass('highlighted');
@@ -593,14 +647,14 @@ $(document).ready(function () {
 	$('.button6').click(function () {
 		if ($('.description').text() != "Author detection rules") {
 			$('.description').fadeOut(function () {
-				$(this).text("Author detection rules").fadeIn(300);
+				$(this).text("Author detection rules").fadeIn(700);
 			});
 			//resetWindows('.button6');
 			resetWindow6();
 		};
 		if ($('.stepcount').text() != "step 6/6") {
 			$('.stepcount').fadeOut(function () {
-				$(this).text("step 6/6").fadeIn(300);
+				$(this).text("step 6/6").fadeIn(700);
 			});
 		};
 		$(this).addClass('highlighted');
@@ -612,28 +666,4 @@ $(document).ready(function () {
 		resetbutton('.button5');
 	});
 
-	/*$('.button2').fadeTo(500,0.5);
-	$('.button3').fadeTo(500,0.5);
-	$('.button4').fadeTo(500,0.5);
-	$('.button5').fadeTo(500,0.5);
-	$('.button6').fadeTo(500,0.5);
-
-	$('.button1').click(function () {
-		$(this).fadeTo(500,1);
-	});
-	$('.button2').click(function () {
-		$(this).fadeTo(500,1);
-	});
-	$('.button3').click(function () {
-		$(this).fadeTo(500,1);
-	});
-	$('.button4').click(function () {
-		$(this).fadeTo(500,1);
-	});
-	$('.button5').click(function () {
-		$(this).fadeTo(500,1);
-	});
-	$('.button6').click(function () {
-		$(this).fadeTo(500,1);
-	});*/
 });
