@@ -46,28 +46,24 @@ function resetOneWindow(clickedbutton) {
 
 // reset two window dimensions for Explore Tables, Classify, Rule Author step
 function resetWindows(clickedbutton) {
-	$('.nodewindow1').fadeOut();
-	$('.selectedregions1').fadeOut();
-	$('.nodewindow1').css('display','inline-block');
+	//$('.nodewindow1').fadeOut();
+	//$('.selectedregions1').fadeOut();
+	//$('.nodewindow1').css('display','inline-block');
 	//$('.nodewindow1').hide();
 	//$('.selectedregions1').hide();
 	//$('.selectedregions1').css('display','inline-block');
-	var win1w, win1h, win2w, win2h, wintitlel, wintitler;
+	var win1w = '65%';
+	var win1h = '80%';
+	var win2w = '32%';
+	var win2h = '60%';
+	var wintitlel, wintitler;
 	if (clickedbutton == '.button1') {
-		win1w = '65%';
-		win1h = '80%';
-		win2w = '32%';
-		win2h = '60%';
 		//$('.leftwintitle').text('demo Page 1 of 1');
 		//$('.rightwintitle').text('Selected Regions');
 		wintitlel = 'demo Page 1 of 1';
 		wintitler = 'Selected Regions';
 	}
 	else if (clickedbutton == '.button3') {
-		win1w = '65%';
-		win1h = '80%';
-		win2w = '32%';
-		win2h = '40%';
 		//$('leftwintitle').text('Table');
 		//$('.rightwintitle').text('Virtual Object List');
 		wintitlel = 'Table';
@@ -75,10 +71,6 @@ function resetWindows(clickedbutton) {
 	}
 	// clickedbutton == '.button6'
 	else {
-		win1w = '65%';
-		win1h = '80%';
-		win2w = '32%';
-		win2h = '50%';
 		//$('.leftwintitle').text('Selected Rule');
 		//$('.rightwintitle').text('Rule List');
 		wintitlel = 'Selected Rule';
@@ -91,19 +83,19 @@ function resetWindows(clickedbutton) {
 
 	//$('.selectedregions1').fadeIn(600);
 	//$('.nodewindow1').fadeIn(500);
-	/*$('.nodewindow1').fadeOut(function () {
-		$('.nodewindow1').css('width',win1w);
-		$('.nodewindow1').css('height',win1h);
-		$('.nodewindow1').css('display','inline-block');
-		$('.nodewindow1').fadeIn(500);
+	//$('nodewindow1').css('display','none');
+	$('.nodewindow1').fadeOut(function () {
+		$(this).css('display','none');
+		$(this).css({'display':'inline-block','width':win1w,
+			'height':win1h}).fadeIn(600);
 	});
 
+	//$('.selectedregions1').css('display','none');
 	$('.selectedregions1').fadeOut(function () {
-		$('.selectedregions1').css('width',win2w);
-		$('.selectedregions1').css('height',win2h);
-		$('.selectedregions1').css('display','inline-block');
-		$('.selectedregions1').fadeIn(500);
-	}); */
+		$(this).css('display','none');
+		$(this).css({'display':'inline-block','width':win2w,
+			'height':win2h}).fadeIn(600);
+	}); 
 
 	$('.rightwintitle').fadeOut(function () {
 		$(this).text(wintitler).fadeIn(500);
