@@ -1,0 +1,487 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar {
+	position: fixed;
+	float: left;
+	height: 100%; /*768px;*/
+	left: 0px;
+	width: 344px;
+	background-color: rgb(7,33,60);
+	background-image: url("assets/sidebarbg.png");
+	background-position: top right;
+	/*bottom: 0;*/
+}
+
+.eadslogo {
+	position: fixed;
+	left: 60px;
+	top: 14px;
+}
+
+.title {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 27px;
+	text-align: center;
+	color: rgb(209,209,209);
+	margin-top: 75px;
+}
+
+/*.mainbuttons {
+	top: 50%;
+} */
+
+.oddbutton {
+	margin-left: 60px;
+	display: block;
+	margin-bottom: -40px;
+}
+
+.evenbutton {
+	margin-left: 176px;
+	display: block;
+	margin-bottom: -40px;
+}
+
+.button1 {
+	border-radius: 50%;
+	height: 102px;
+	width: 102px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	color: rgb(0,0,0);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button1icon.png");
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+/*.button1hover {
+	color: rgb(1,145,171);
+	opacity: 1;
+	cursor: pointer;
+}*/
+
+.button1:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}
+
+.button2 {
+	border-radius: 50%;
+	height: 102px;
+	width: 102px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	color: rgb(0,0,0);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button2icon.png");
+	background-position: center;
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+/*.button2hover {
+	color: rgb(1,145,171);
+	opacity: 1;
+	cursor: pointer;
+}*/
+
+.button2:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}
+
+.button3 {
+	border-radius: 50%;
+	height: 102px;
+	width: 102px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	color: rgb(0,0,0);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button3icon.png");
+	background-position: center;
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+/*.button3hover {
+	color: rgb(1,145,171);
+	opacity: 1;
+	cursor: pointer;
+}*/
+
+.button3:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}
+
+.highlighted {
+    -webkit-box-shadow: 0 0 15px #BEFFBB;
+    -moz-box-shadow: 0 0 15px #BEFFBB;
+    box-shadow: 0 0 15px #BEFFBB;
+    cursor: pointer;
+}
+
+.button4 {
+	border-radius: 50%;
+	height: 102px;
+	width: 102px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	color: rgb(0,0,0);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button4icon.png");
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+.button4:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}
+
+.button5 {
+	border-radius: 50%;
+	height: 102px;
+	width: 102px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	color: rgb(0,0,0);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button5icon.png");
+	background-position: center;
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+/*.button5hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}*/
+
+.button5:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}
+
+.button6 {
+	border-radius: 50%;
+	height: 102px;
+	width: 102px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	color: rgb(0,0,0);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("assets/button6icon.png");
+	background-position: center;
+	opacity: 0.5;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+/*.button6hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}*/
+
+.button6:hover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}
+
+.buttonhover {
+	opacity: 1;
+	color: rgb(1,145,171);
+	cursor: pointer;
+}
+
+/*.label1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -74px;
+	margin-left: -185px;
+}
+
+.label2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -65px;
+	margin-left: -70px;
+}
+
+.label3 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -65px;
+	margin-left: -185px;
+}
+
+.label4 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -75px;
+	margin-left: -70px;
+}
+
+.label5 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -65px;
+	margin-left: -185px;
+}
+
+.label6 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -75px;
+	margin-left: -70px;
+}*/
+
+.itlogo {
+	/*margin-top: 582px;*/
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+	width: 20%;
+}
+
+.window {
+	/*border-style: solid;
+	border-width: 10px;*/
+	position: absolute;
+	top: 0px;
+	left: 345px;
+	right: 0px;
+	bottom: 0px;
+	background-image: url("assets/windowbg.png");
+}
+
+.description {
+	/*position: absolute; */
+	line-height: 7px; 
+	padding-left: 10px;
+	/*right: 10px; */
+	font-family: 'Quicksand', sans-serif; 
+	/* font-family: 'Maven Pro', sans-serif;*/
+	font-weight: 400;
+	font-size: 36px;
+	color: rgb(57,98,143);
+}
+
+.stepcount {
+	position: absolute;
+	top: 3px;
+	right: 35px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: rgb(150,150,150);
+}
+
+.welcomemsg {
+	/*position: absolute;*/
+	margin-top: 200px;
+	margin-right: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 55px;
+	/*color: rgb(57,98,143);*/
+	color: rgb(64,106,183);
+	text-align: right;
+}
+
+.instructions {
+	/*position: absolute;
+	top: 50%;
+	left: 20%;*/
+	margin-right: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 35px;
+	text-align: right;
+	color: rgb(109,111,114);
+}
+
+/* EXPLORE TABLES TAB */
+
+.nodewindow1 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	width: 65%;
+	display: inline-block;
+	height: 80%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+	vertical-align: top;
+}
+
+.selectedregions1 {
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	margin-top: 10px;
+	height: 60%;
+	width: 32%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+	vertical-align: top;
+}
+
+.leftwintitle {
+	line-height: 0;
+	padding-left: 5px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 15px;
+	color: rgb(80,161,191);
+}
+
+.rightwintitle {
+	line-height: 0;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 15px;
+	padding-left: 5px;
+	color: rgb(105,148,173);
+}
+
+/* BASELINE TAB */
+.graph2 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	height: 76%;
+	width: 98%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+}
+
+/* CLASSIFY TAB */
+.table3 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	height: 76%;
+	width: 98%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+}
+
+/*.virtualobjectlist3 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	height: 60%;
+	width: 32%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+}*/
+
+/* BIND RULES TAB */
+.scopemodel4 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	height: 80%;
+	width: 66%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+}
+
+/* REPORTING TAB */
+.queryreport5 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	height: 80%;
+	width: 66%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+}
+
+/* RULE AUTHOR TAB */
+.selectedrule6 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	width: 66%;
+	display: inline-block;
+	height: 80%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+}
+
+/*.rulelist6 {
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	height: 60%;
+	width: 32%;
+	border-width: 2px;
+	border-color: rgb(150,150,150);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+}*/
