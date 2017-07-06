@@ -344,6 +344,11 @@ body, html {
 	color: rgb(109,111,114);
 }
 
+a {
+	color: rgb(61,175,206);
+	text-decoration: none;
+}
+
 /* EXPLORE TABLES TAB */
 
 .nodewindow1 {

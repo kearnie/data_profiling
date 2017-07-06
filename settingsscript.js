@@ -362,6 +362,8 @@ $(document).ready(function () {
 	$('.queryreport5').hide();
 	$('.selectedrule6').hide();
 	//$('.rulelist6').hide();
+	$('.mainbuttons').hide();
+	$('.mainbuttons').fadeIn(1700);
 	$('.button1').click(function () {
 		/*$('.description').fadeIn(400);
 		$('.stepcount').fadeIn(400);*/
